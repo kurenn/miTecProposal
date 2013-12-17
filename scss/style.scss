@@ -1,0 +1,107 @@
+@import "compass";
+
+//Mixins
+@mixin animation($duration: 3s, $delay: 0.2s) {
+  -webkit-animation-duration: $duration;
+  -webkit-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-delay: $delay;
+  -ms-animation-duration: $duration;
+  -ms-animation-delay: $delay;
+  animation-duration: $duration;
+  animation-delay: $delay;
+}
+
+//Smooth transitions
+* {
+  -webkit-transition: all 0.3s ease;                  
+  -moz-transition: all 0.3s ease;                 
+  -o-transition: all 0.3s ease;   
+  -ms-transition: all 0.3s ease;          
+  transition: all 0.3s ease;
+}
+
+//Panel config
+.panel-content {
+  color: #555;
+  background: url(../img/tecBgBlur.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.panel-content {
+  padding-top: 40px;
+}
+
+.logo-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+//Login form
+.login-form {
+  width: 40%;
+  margin: 0 auto;
+  @include border-radius(4px);
+  padding: 45px; 
+  background: #FFF;
+  margin-bottom: 15px;
+  @include animation;
+
+  .header {
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  form {
+    margin-bottom: 40px;
+
+    input {
+      height: 40px;
+      @include border-radius(0);
+    }
+  }
+
+  .forgot-password {
+    font-size: 14px;
+  }
+
+}
+
+.social-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+//Responsive behavior
+@media only screen and (max-width: 979px) {
+
+  .panel-content {
+    background: url(../img/tecBgBlur.png) no-repeat fixed;
+    background-attachment: fixed;
+    overflow: scroll !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .login-form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width:480px) {
+
+  .panel-content {
+    padding-top: 15px !important;
+  }
+
+  .login-form {
+    padding: 15px; 
+  }
+}

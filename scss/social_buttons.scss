@@ -1,0 +1,131 @@
+/*------------------------------------*\
+    $Social buttons
+\*------------------------------------*/
+/**
+ * Basic social buttons structural styling. 
+ * 
+ * Designed and built @kurenn  
+ */
+
+//Compass dependencies
+@import "compass/css3/border-radius";
+
+//Variables
+$fb-button-bg: #3c5a97;
+$tw-button-bg: #019ad2;
+$plus-button-bg: #ce3e26;
+$github-button-bg: #fafafa;
+$foursquare-button-bg: #0072b1;
+$linkedin-button-bg: #73b8db;
+$pinterest-button-bg: #d62229;
+$dribble-button-bg: #ea4c89;
+
+$button-badge-size: 30px;
+$button-border-radius: 2px;
+
+$colors: facebook $fb-button-bg "\f09a",
+         twitter $tw-button-bg "\f099",
+         google-plus $plus-button-bg "\f0d5",
+         foursquare $foursquare-button-bg "\f180",
+         pinterest $pinterest-button-bg "\f0d2",
+         dribble $dribble-button-bg "\f17d",
+         linkedin $linkedin-button-bg "\f0e1";
+
+
+.btn-social {
+  @include border-radius($button-border-radius);
+  font-size: 98%;
+  font-weight: 400;
+  opacity: 0.8;
+
+  &:before {
+    margin-right: 15px;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    *margin-right: .3em; // fixes ie7 issues;
+  }
+
+  &.btn-badge {
+    @include border-radius(50%);
+    height: $button-badge-size;
+    width: $button-badge-size;
+    padding: 3px 0 0 0;
+
+    &:before {
+      margin-right: 0;
+      *margin-right: .3em; // fixes ie7 issues;
+    }
+
+    &.btn-large {
+      height: $button-badge-size + 15;
+      width: $button-badge-size + 15;
+      padding: 12px 0 0 0;
+    }
+  }
+}
+
+@each $color in $colors {
+  .btn-#{nth($color, 1)} {
+    background: nth($color, 2);
+    border: 1px solid darken(nth($color, 2), 10%);
+
+    &:hover {
+      background: darken(nth($color, 2), 2%);
+    }
+
+    &:before {
+      content: nth($color, 3);
+    }
+
+    &.btn-disabled, &[disabled] {
+      opacity: 0.65;
+      background: nth($color, 2);
+    }
+
+    &.btn-alpha {
+      background: transparent;
+      color: nth($color, 2);
+      border: 1px solid darken(nth($color, 2), 10%);
+
+      &:hover {
+        background: nth($color, 2);
+        border: 1px solid darken(nth($color, 2), 10%);
+        color: #FFF;
+      }
+    }
+  }
+}
+
+.btn-github {
+  background: $github-button-bg;
+  border: 1px solid darken($github-button-bg, 10%);
+  color: #333;
+
+  &:hover {
+    background: darken($github-button-bg, 2%);
+  }
+
+  &:before {
+    content: "\f09b";
+  }
+
+  &.btn-disabled, &[disabled] {
+    opacity: 0.65;
+    background: $github-button-bg;
+  }
+
+  &.btn-alpha {
+    background: transparent;
+    color: #333;
+    border: 1px solid darken($github-button-bg, 10%);
+
+    &:hover {
+      background: $github-button-bg;
+      border: 1px solid darken($github-button-bg, 10%);
+    }
+  }
+}
+

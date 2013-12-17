@@ -1,0 +1,95 @@
+* {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.panel-content {
+  color: #555;
+  background: url(../img/tecBgBlur.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.panel-content {
+  padding-top: 40px;
+}
+
+.logo-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  width: 40%;
+  margin: 0 auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 45px;
+  background: #FFF;
+  margin-bottom: 15px;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-duration: 3s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-duration: 3s;
+  -ms-animation-delay: 0.2s;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+}
+.login-form .header {
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.login-form form {
+  margin-bottom: 40px;
+}
+.login-form form input {
+  height: 40px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.login-form .forgot-password {
+  font-size: 14px;
+}
+
+.social-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 979px) {
+  .panel-content {
+    background: url(../img/tecBgBlur.png) no-repeat fixed;
+    background-attachment: fixed;
+    overflow: scroll !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .login-form {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .panel-content {
+    padding-top: 15px !important;
+  }
+
+  .login-form {
+    padding: 15px;
+  }
+}

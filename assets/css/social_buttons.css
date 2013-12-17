@@ -1,0 +1,246 @@
+/*------------------------------------*\
+    $Social buttons
+\*------------------------------------*/
+/**
+ * Basic social buttons structural styling. 
+ * 
+ * Designed and built @kurenn  
+ */
+.btn-social {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 98%;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.btn-social:before {
+  margin-right: 15px;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+.btn-social.btn-badge {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 3px 0 0 0;
+}
+.btn-social.btn-badge:before {
+  margin-right: 0;
+  *margin-right: .3em;
+}
+.btn-social.btn-badge.btn-large {
+  height: 45px;
+  width: 45px;
+  padding: 12px 0 0 0;
+}
+
+.btn-facebook {
+  background: #3c5a97;
+  border: 1px solid #2d4473;
+}
+.btn-facebook:hover {
+  background: #395690;
+}
+.btn-facebook:before {
+  content: "\f09a";
+}
+.btn-facebook.btn-disabled, .btn-facebook[disabled] {
+  opacity: 0.65;
+  background: #3c5a97;
+}
+.btn-facebook.btn-alpha {
+  background: transparent;
+  color: #3c5a97;
+  border: 1px solid #2d4473;
+}
+.btn-facebook.btn-alpha:hover {
+  background: #3c5a97;
+  border: 1px solid #2d4473;
+  color: #FFF;
+}
+
+.btn-twitter {
+  background: #019ad2;
+  border: 1px solid #01759f;
+}
+.btn-twitter:hover {
+  background: #0193c8;
+}
+.btn-twitter:before {
+  content: "\f099";
+}
+.btn-twitter.btn-disabled, .btn-twitter[disabled] {
+  opacity: 0.65;
+  background: #019ad2;
+}
+.btn-twitter.btn-alpha {
+  background: transparent;
+  color: #019ad2;
+  border: 1px solid #01759f;
+}
+.btn-twitter.btn-alpha:hover {
+  background: #019ad2;
+  border: 1px solid #01759f;
+  color: #FFF;
+}
+
+.btn-google-plus {
+  background: #ce3e26;
+  border: 1px solid #a3311e;
+}
+.btn-google-plus:hover {
+  background: #c53b24;
+}
+.btn-google-plus:before {
+  content: "\f0d5";
+}
+.btn-google-plus.btn-disabled, .btn-google-plus[disabled] {
+  opacity: 0.65;
+  background: #ce3e26;
+}
+.btn-google-plus.btn-alpha {
+  background: transparent;
+  color: #ce3e26;
+  border: 1px solid #a3311e;
+}
+.btn-google-plus.btn-alpha:hover {
+  background: #ce3e26;
+  border: 1px solid #a3311e;
+  color: #FFF;
+}
+
+.btn-foursquare {
+  background: #0072b1;
+  border: 1px solid #00517e;
+}
+.btn-foursquare:hover {
+  background: #006ba7;
+}
+.btn-foursquare:before {
+  content: "\f180";
+}
+.btn-foursquare.btn-disabled, .btn-foursquare[disabled] {
+  opacity: 0.65;
+  background: #0072b1;
+}
+.btn-foursquare.btn-alpha {
+  background: transparent;
+  color: #0072b1;
+  border: 1px solid #00517e;
+}
+.btn-foursquare.btn-alpha:hover {
+  background: #0072b1;
+  border: 1px solid #00517e;
+  color: #FFF;
+}
+
+.btn-pinterest {
+  background: #d62229;
+  border: 1px solid #aa1b21;
+}
+.btn-pinterest:hover {
+  background: #cd2127;
+}
+.btn-pinterest:before {
+  content: "\f0d2";
+}
+.btn-pinterest.btn-disabled, .btn-pinterest[disabled] {
+  opacity: 0.65;
+  background: #d62229;
+}
+.btn-pinterest.btn-alpha {
+  background: transparent;
+  color: #d62229;
+  border: 1px solid #aa1b21;
+}
+.btn-pinterest.btn-alpha:hover {
+  background: #d62229;
+  border: 1px solid #aa1b21;
+  color: #FFF;
+}
+
+.btn-dribble {
+  background: #ea4c89;
+  border: 1px solid #e51e6b;
+}
+.btn-dribble:hover {
+  background: #e94383;
+}
+.btn-dribble:before {
+  content: "\f17d";
+}
+.btn-dribble.btn-disabled, .btn-dribble[disabled] {
+  opacity: 0.65;
+  background: #ea4c89;
+}
+.btn-dribble.btn-alpha {
+  background: transparent;
+  color: #ea4c89;
+  border: 1px solid #e51e6b;
+}
+.btn-dribble.btn-alpha:hover {
+  background: #ea4c89;
+  border: 1px solid #e51e6b;
+  color: #FFF;
+}
+
+.btn-linkedin {
+  background: #73b8db;
+  border: 1px solid #4aa3d1;
+}
+.btn-linkedin:hover {
+  background: #6bb4d9;
+}
+.btn-linkedin:before {
+  content: "\f0e1";
+}
+.btn-linkedin.btn-disabled, .btn-linkedin[disabled] {
+  opacity: 0.65;
+  background: #73b8db;
+}
+.btn-linkedin.btn-alpha {
+  background: transparent;
+  color: #73b8db;
+  border: 1px solid #4aa3d1;
+}
+.btn-linkedin.btn-alpha:hover {
+  background: #73b8db;
+  border: 1px solid #4aa3d1;
+  color: #FFF;
+}
+
+.btn-github {
+  background: #fafafa;
+  border: 1px solid #e1e1e1;
+  color: #333;
+}
+.btn-github:hover {
+  background: whitesmoke;
+}
+.btn-github:before {
+  content: "\f09b";
+}
+.btn-github.btn-disabled, .btn-github[disabled] {
+  opacity: 0.65;
+  background: #fafafa;
+}
+.btn-github.btn-alpha {
+  background: transparent;
+  color: #333;
+  border: 1px solid #e1e1e1;
+}
+.btn-github.btn-alpha:hover {
+  background: #fafafa;
+  border: 1px solid #e1e1e1;
+}
